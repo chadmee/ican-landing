@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ICAN</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .mySlides {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="navbarUl">
+            <li><a id="len1" class="hoverable" href="#">Home</a></li>
+            <li><a id="len2" class="hoverable" href="#">About</a></li>
+            <li><a id="len3" class="hoverable" href="#">Portfolio</a></li>
+            <li><a id="len4" class="hoverable" href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page content -->
+    <div class="pageWrapper" style="max-width: 2000px; margin-top: 46px">
+      <!-- Automatic Slideshow Images -->
+      <div class="landFullSize">
+        <img class="landBanner" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRghslTbzwiZ5Jfc7PJgmxUVtJ9745WoYhxdELizqdr9qRyQaSBLuFCCmLnZHZy9ZWOs5nUeLS3DbZbt21LKzl-3Ei-XA=s1600" />
+        <div class="productGrid">
+            <div class="productGridItem" href="https://www.bonghemia.cz/">
+                <a href="https://www.bonghemia.cz" target="_blank">
+                    <img class="hoverAnim" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTcnf401G489bTE5yB22s51bOl0fnmso__VjKUe4Uu8nTERzY38gCSlCWLh0aArqExDg6arcBvrntkNRntrGMAByL55ow=s1600" />
+                </a>
+            </div>
+            <div class="productGridItem" href="https://www.bonghemia.cz/">
+                <a href="https://www.bonghemia.cz" target="_blank">
+                <img class="hoverAnim" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQwweoJVLZmQSVg7xH7YfKguAcE5lEqqsx9FEpy8vsQxrhHMG2It8pB2VnaPOvhmq_q8ulXp0tKI3v9vztjb3cAIwf0gQ=s1600" />
+                </a>
+            </div>
+            <div class="productGridItem">
+                <a href="https://www.bonghemia.cz" target="_blank">
+                <img class="hoverAnim" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRZlV92EEMMfJMW58qXzqJ4C7WLTwbL4zpoKtPiwAO19L7rL-BtC89WrlJdCe9QglE2YGzV65xFy0fVxZm9OkbnJt-gcQ=s1600" />
+                </a>
+            </div>
+        </div>
+      </div>
+
+      <!-- The Band Section -->
+      <div
+        class="contentContainer"
+        style="max-width: 800px"
+      >
+        <h2 class="icanTitle">I CAN</h2>
+        <p class="icanSecondary"><i>pives pives pives</i></p>
+        <p class="icanText">
+            pives pives pives pives pives pives pives pives pives pives pives pives pives pives
+            pives pives pives pives pives pives pives pives pives pives pives pives pives pives
+            pives pives pives pives pives pives pives pives pives pives pives pives pives pives
+        </p>
+
+      <!-- End Page Content -->
+    </div>
+
+    <!-- Image of location/map -->
+    <img
+      src="https://i.dailymail.co.uk/i/pix/scaled/2011/07/22/article-2017721-0D1DEF0400000578-763_308x185.jpg"
+      class="flintstoneImg"
+      style="width: 100%"
+    />
+
+    <!-- Footer -->
+    <footer
+      class="icanFooter"
+    >
+      <p class="footerWrapper">
+        Mame:
+        <a href="https://www.bonghemia.cz/" target="_blank"
+          >pives</a
+        >
+      </p>
+    </footer>
+
+    <style>
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1;
+            height: 50px;
+        }
+
+        .navbarUl {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+        }
+
+        .navbarUl li {
+            transition: .4s ease-in-out;
+        }
+
+        .navbarUl li a {
+            text-transform: uppercase;
+            font-style: normal;
+            color: white;
+            font-size: 20px;
+            transition: .4s ease-in-out;
+            text-decoration: none;
+        }
+
+        .navbarUl li:hover{
+            scale: 1.1;
+
+            a {
+                top: -10px;
+            }
+        }
+
+        .contentContainer {
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .icanTitle {
+            font-size: 50px;
+            margin-top: 50px;
+        }
+
+        .landFullSize {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .landFullSize .landBanner {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .productGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 10px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            justify-items: center;
+            align-items: end;
+        }
+
+        .productGridItem {
+            width: 65%;
+            height: 65%;
+            object-fit: cover;
+            overflow: hidden;
+            transform: rotate(10deg);
+            transform: translateY(20px);
+        }
+
+        .productGridItem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+        .hoverAnim {
+        animation-name: hover;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        }
+
+        @keyframes hover {
+            0% {
+                transform: translateY(0) rotate(8deg);
+            }
+            50% {
+                transform: translateY(-10px) rotate(10deg);
+            }
+            100% {
+                transform: translateY(0) rotate(8deg);
+            }
+        }
+
+        .footerWrapper {
+            text-align: center;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+    </style>
+
+    <script>
+        // Scripts go here
+    </script>
+  </body>
+</html>
