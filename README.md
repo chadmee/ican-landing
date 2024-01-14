@@ -10,7 +10,7 @@ Welcome to the official repository for the ICanDrink.wtf landing page. This repo
 
 ## Replacement Script Usage
 
-To integrate the replacement script into your website, follow the example usage below:
+To integrate the replacement script, follow the example usage below:
 
 ```javascript
 // Fetches the HTML file (from URL)
