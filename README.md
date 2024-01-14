@@ -37,10 +37,10 @@ All contributions to this repository are welcome! If you plan to contribute, ple
 
 ## Contact
 
-For inquiries or additional information, please contact us at [krystof@bonghemia.cz](mailto:krystof@bonghemia.cz).
+For inquiries or additional information, please contact us [here](mailto:krystof@bonghemia.cz).
 
 ## Support
 
-If you encounter any issues or have questions, please check our [FAQ](docs/FAQ.md) or open a [new issue](https://github.com/chadmee/ican-landing/issues).
+If you encounter any issues or have questions, open a [new issue](https://github.com/chadmee/ican-landing/issues).
 
 Thank you for considering contributing to the ICanDrink.wtf landing page project.
