@@ -9,7 +9,6 @@
 
 <p align="center">Welcome to the official repository for the ICanDrink.wtf landing page. This repository contains the source code for the landing page, as well as a script designed for use with Shoptet to replace all HTML content on a given page.</p>
 <br>
-<br>
 
 ## Replacement Script Usage
 
