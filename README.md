@@ -35,6 +35,8 @@ All contributions to this repository are welcome! If you plan to contribute, ple
 - Perform commits on a custom branch, avoiding direct commits to the **main** branch.
 - Ensure all changes align with the repository's coding standards and practices.
 
+Thank you for considering contributing to the ICanDrink.wtf landing page project.
+
 ## Contact
 
 For inquiries or additional information, please contact us [here](mailto:krystof@bonghemia.cz).
@@ -42,5 +44,3 @@ For inquiries or additional information, please contact us [here](mailto:krystof
 ## Support
 
 If you encounter any issues or have questions, open a [new issue](https://github.com/chadmee/ican-landing/issues).
-
-Thank you for considering contributing to the ICanDrink.wtf landing page project.
