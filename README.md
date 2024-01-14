@@ -1,6 +1,5 @@
-<p align="center">
 <h1 align="center">ICanDrink.wtf Landing Page</h1>
-
+<p align="center">
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
