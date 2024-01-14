@@ -1,13 +1,12 @@
 <h1 align="center">ICanDrink.wtf Landing Page</h1>
-<p align="center">
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+<p align="center">[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)</p>
 
-Welcome to the official repository for the ICanDrink.wtf landing page. This repository contains the source code for the landing page, as well as a script designed for use with Shoptet to replace all HTML content on a given page.
-</p>
+<p align="center">[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)</p>
+<p align="center">[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)</p>
+<p align="center">[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)</p>
+
+<h3 align="center">Welcome to the official repository for the ICanDrink.wtf landing page. This repository contains the source code for the landing page, as well as a script designed for use with Shoptet to replace all HTML content on a given page.</h3>
 
 ## Replacement Script Usage
 
