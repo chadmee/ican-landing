@@ -1,8 +1,13 @@
+<!-- 
+This is the HTML code for the ICAN landing page.
+It includes the structure and styling for the page layout, navigation menu, product grid, and footer.
+The page also contains images, links, and text content.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>ICAN</title>
+  <title>ICanDrink.wtf | Czech Cannabis Beer</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
@@ -26,13 +31,13 @@
     </nav>
 
     <!-- Page content -->
-    <div class="pageWrapper" style="max-width: 2000px;">
+    <div class="pageWrapper" style="max-width: none; margin: 0 auto;">
       <div class="landFullSize">
         <img class="landBanner"
           src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRghslTbzwiZ5Jfc7PJgmxUVtJ9745WoYhxdELizqdr9qRyQaSBLuFCCmLnZHZy9ZWOs5nUeLS3DbZbt21LKzl-3Ei-XA=s1600" />
         <div class="landText">
           <a class="landTitleWrapper">
-            <h1 class="landTitle">ICAN</h1>
+            <h1 class="landTitle">I CAN</h1>
           </a>
           <p class="landSecondary">Czech cannabis beer</p>
         </div>
@@ -96,10 +101,18 @@
 
       <footer class="footer">
         <div class="container">
-          <p class="footer-text">© 2024 <a href="/beer/" style="text-decoration: none; cursor: pointer; color: #888">ICAN Drink</a>. All rights reserved.</p>
+          <p class="footer-text">
+            <a href="/gdpr/" style="text-decoration: none; cursor: pointer; color: #888;">Privacy Policy</a>
+            &nbsp;|&nbsp;
+            <a href="/terms-and-conditions/" style="text-decoration: none; cursor: pointer; color: #888;">ToS</a>
+            &nbsp;|&nbsp;
+            <a href="/about-us/" style="text-decoration: none; cursor: pointer; color: #888;">About Us</a>
+            <br>
+            © 2024 <a href="/beer/"
+            style="text-decoration: none; cursor: pointer; color: #888">ICAN Drink</a>. All rights reserved.</p>
         </div>
       </footer>
-  </div>
+    </div>
 
     <style>
       html,
@@ -113,12 +126,23 @@
         background-color: #333;
         padding: 20px;
         text-align: center;
+        letter-spacing: .7px;
+        line-height: 1.5;
       }
 
       .footer-text {
         font-size: 14px;
         color: #888;
         margin: 0;
+      }
+
+      .footer a {
+        transition: .2s ease-in-out;
+      }
+
+      .footer a:hover {
+        color: #aeaeae !important;
+        font-weight: 600;
       }
 
       .logo {
@@ -625,7 +649,21 @@
         transition-delay: 1640ms;
       }
 
+      /* Detect safari, fix text shadows */
 
+      @media not all and (min-resolution: 0.001dpcm) {
+        .landTitle {
+          text-shadow: 3px 3px 6px rgba(70, 70, 70, 0.2),
+            -2px 2px 5px rgba(70, 70, 70, 0.2),
+            -2px 1px 8px rgba(70, 70, 70, 0.5);
+        }
+
+        .landSecondary {
+          text-shadow: 3px 3px 6px rgba(70, 70, 70, 0.2),
+            -2px 2px 5px rgba(70, 70, 70, 0.2),
+            -2px 1px 8px rgba(70, 70, 70, 0.5);
+        }
+      }
 
       @media screen and (max-width: 991px) {
 
