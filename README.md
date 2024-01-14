@@ -1,5 +1,5 @@
 <p align="center">
-# ICanDrink.wtf Landing Page
+<h1 align="center">ICanDrink.wtf Landing Page</h1>
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
