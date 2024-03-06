@@ -12,6 +12,7 @@ The page also contains images, links, and text content.
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -36,66 +37,10 @@ The page also contains images, links, and text content.
         <img class="landBanner"
           src="https://www.icandrink.wtf/user/documents/upload/Landing Obsah/Untitled-2.jpg" />
         <div class="landText">
-          <a class="landTitleWrapper">
-            <h1 class="landTitle">I CAN</h1>
-          </a>
-          <p class="landSecondary">Czech cannabis beer</p>
-        </div>
-        <div class="productGrid">
-          <div class="productGridItem">
-            <a href="https://www.icandrink.wtf/i-can-chill/">
-              <img class="hoverAnim"
-                src="https://www.icandrink.wtf/user/documents/upload/Landing Obsah/icanchill.png" />
-            </a>
-          </div>
-          <div class="productGridItem">
-            <a href="https://www.icandrink.wtf/i-can-swim/">
-              <img class="hoverAnim"
-                src="https://www.icandrink.wtf/user/documents/upload/Landing Obsah/icanswim.png" />
-            </a>
-          </div>
-          <div class="productGridItem">
-            <a href="https://www.icandrink.wtf/i-can-travel/">
-              <img class="hoverAnim"
-                src="https://www.icandrink.wtf/user/documents/upload/Landing Obsah/icantravel.png" />
-            </a>
-          </div>
+          <p class="landSecondary"></p>
         </div>
       </div>
 
-      <!-- The Band Section -->
-      <div class="contentContainer">
-        <div class="contentSpacingContainer" style="max-width: 800px">
-          <div class="icanTitleWrapper">
-            <h2 class="icanTitle">Want them all?</h2>
-            <p class="icanSecondary"><i>we've got you covered.</i></p>
-            <p class="icanText">
-              Purchase our triple pack and get all three of our products.
-              Exactly the ammount of refreshment your tastebuds need.
-            </p>
-            <a class="triplePackButton" href="/i-can-have-3/">
-              <img class="triplePackImg"
-                src="https://www.icandrink.wtf/user/documents/upload/Landing Obsah/ican_pack.png">
-            </a>
-            <section class="brandValues">
-              <h2><strong>Can you feel it?</strong></h2>
-              <div class="brandValuesText">
-                That unmistakable ambiance?<br>
-                That singular, defining moment.<br>
-                It's the synergy of elements, a seamless fusion.<br>
-                Here, tradition meets innovation, intertwining two distinct cultures and communities.<br>
-                It's about bringing together cannabis and hops, two kindred plants, to craft a perfect moment, here and
-                now.<br>
-                <br>
-                Cannabis? They told us we cannot.<br>
-                But we believe <strong>we can.</strong>
-                <br>
-                <br>
-              </div>
-            </section>
-          </div>
-        </div>
-        <!-- End Page Content -->
       </div>
       <!-- Footer -->
 
@@ -217,6 +162,10 @@ The page also contains images, links, and text content.
         position: absolute;
       }
 
+      .landFullSize, .landBanner, .pageWrapper {
+        background-color: black
+      }
+
       .productGrid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -287,12 +236,11 @@ The page also contains images, links, and text content.
       .landText {
         position: absolute;
         z-index: 1;
-        top: -6em;
         left: 0;
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         line-height: 0.1;
         justify-content: center;
         align-items: center;
@@ -334,20 +282,15 @@ The page also contains images, links, and text content.
       }
 
       .landSecondary {
-        text-transform: uppercase;
         transition: all 0.4s ease-in-out;
-        font-size: 1.5em;
-        color: white;
-        font-weight: 900;
+        font-size: 1.2em;
+        color: yellow;
+        font-weight: 400;
         line-height: 1;
         margin: 0;
         text-shadow: 3px 3px 20px #464646c6,
           -2px 2px 30px #464646c6,
           -2px 1px 40px #464646c6;
-        /* text-shadow: 0 2px 2px #bababae4,
-          -1px 2px 1px #bababad4,
-          -2px 4px 0px #b2b2b2c1,
-          -3px 6px 0px #a2a2a2ae; */
       }
 
       .brandValuesWrapper {
@@ -676,7 +619,7 @@ The page also contains images, links, and text content.
         }
 
         .landSecondary {
-          font-size: 1.4em;
+          font-size: 1em;
         }
 
         .icanTitle {
@@ -717,6 +660,28 @@ The page also contains images, links, and text content.
 
     <script>
       // Scripts go here
+      const sleep = ms => new Promise(r => setTimeout(r, ms));
+      var $img = $('.landBanner'), $text = $('.landSecondary'), i = 0;
+      var source = ["https://www.icandrink.wtf/user/documents/upload/Landing Obsah/v2/ican_parkoviste-1-2.jpg","https://www.icandrink.wtf/user/documents/upload/Landing Obsah/v2/ican_parkoviste-5-2.jpg","https://www.icandrink.wtf/user/documents/upload/Landing Obsah/v2/ican_parkoviste-2-2.jpg"];
+      var textContent = ["Taste the freedom.\n\nYou can!", "Can you feel it? That unmistakable ambiance? That singular, defining moment. It's the synergy of elements, a seamless fusion. Here, tradition meets innovation, intertwining two distinct cultures and communities. It's about bringing together cannabis and hops, two kindred plants, to craft a perfect moment, here and now. Cannabis? They told us we cannot. But we believe we can.", "True school craft beer.\n\nIndeed."]
+      document.onload = $img.attr("src", source[0]),$text.text("Taste the freedom.\n\nYou can!");
+
+      setInterval(async function() {
+        $text.fadeOut(1000);  
+        $img.fadeOut(1000);
+
+        await sleep(1000)
+        $img.attr("src", source[(++i % source.length)]);
+        $text.text(textContent[(++i % textContent.length)]);
+
+        if ($img.attr("src") != source[0] && $img.attr("src") != source[1] && $img.attr("src") != source[2]) {
+          $text.text("Vylilo se nám pivko a zamazalo kód.\nOmlouváme se za komplikace.");
+        }
+
+        $img.fadeIn(1000);
+        $text.fadeIn(1000);
+      }, 10000);
+
     </script>
 </body>
 
