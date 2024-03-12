@@ -676,27 +676,29 @@ The page also contains images, links, and text content.
       var textContent = ["Taste the freedom.\nYou can!", "Can you feel it? That unmistakable ambiance?\nThat singular, defining moment. It's the synergy of elements, a seamless fusion. Here, tradition meets innovation, intertwining two distinct cultures and communities.\nIt's about bringing together cannabis and hops, two kindred plants, to craft a perfect moment, here and now. Cannabis?\nThey told us we cannot. But we believe we can.", "True school craft beer.\nIndeed."]
       document.onload = $img.src = source[1], $text.innerHTML = "Taste the freedom.\nYou can!";
 
-      let repeat = setInterval(function () {
-        if (i > 2) {
-          i = 0;
-        }
-
-        let todayDate = new Date().getTime();
-        $(".landSecondary").fadeOut(1200);
-        $(".landBanner").fadeOut(1000);
-    
-        $(".landBanner").promise().done(function () {
-          $text.innerText = textContent[i];
-          $img.src = source[i];
-          $(".landBanner").fadeIn(1000);
-          $(".landSecondary").fadeIn(1500);
+      function icanRoll() {
+        let repeat = setInterval(function () {
+          if (i > 2) {
+            i = 0;
+          }
+  
+          let todayDate = new Date().getTime();
+          $(".landSecondary").fadeOut(1200);
+          $(".landBanner").fadeOut(1000);
       
-        ++i;
+          $(".landBanner").promise().done(function () {
+            $text.innerText = textContent[i];
+            $img.src = source[i];
+            $(".landBanner").fadeIn(1000);
+            $(".landSecondary").fadeIn(1500);
+        
+          ++i;
+        });
+  
+        }, 5000);
+      }
 
-        console.log("\n\n\n", i, "\n", textContent[i], "\n", source[i]);
-      });
-
-      }, 5000);
+      icanRoll();
     </script>
 </body>
 
